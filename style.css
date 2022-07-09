@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+.modal-wrapper {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: rgba(80, 80, 80, 0.7);
+  z-index: 0; }
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  min-height: 100vh; }
+  .page .header {
+    display: flex;
+    margin: 30px 0 0 0;
+    background-color: #1e1010;
+    width: 70%;
+    height: 60px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 24px;
+    font-family: 'Barlow', sans-serif; }
+    .page .header .social {
+      width: 200px;
+      color: white;
+      display: flex;
+      justify-content: left; }
+      .page .header .social i {
+        margin: 10px;
+        font-size: 27px;
+        transition-duration: 0.6s; }
+      .page .header .social .fa-facebook-square:hover {
+        color: #0400ff; }
+      .page .header .social .fa-envelope:hover {
+        color: #fc4343; }
+      .page .header .social .fa-instagram-square:hover {
+        color: #ff00f2; }
+    .page .header .h_logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 200px; }
+      .page .header .h_logo .header_logo {
+        font-size: 40px;
+        color: #a116fd;
+        text-decoration: none;
+        font-family: 'Dosis', sans-serif;
+        transition-duration: 0.4s; }
+        .page .header .h_logo .header_logo:hover {
+          text-shadow: #cc00ff 1px 0 10px;
+          border-style: solid; }
+    .page .header .log_in_out {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 200px; }
+      .page .header .log_in_out .login {
+        transition-duration: 0.4s;
+        text-decoration: none;
+        color: #fdfdfd;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none; }
+        .page .header .log_in_out .login:hover {
+          text-shadow: white 3px 3px 10px; }
+      .page .header .log_in_out .signup {
+        transition-duration: 0.4s;
+        text-decoration: none;
+        color: #a116fd;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none; }
+        .page .header .log_in_out .signup:hover {
+          text-shadow: #cc00ff 3px 3px 10px; }
+  .page .main {
+    background-color: #ffffff;
+    width: 70%;
+    height: 100%; }
+    .page .main .gasCalculator {
+      width: 190px;
+      height: 150px;
+      background-color: #efcb70;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
+      .page .main .gasCalculator .choseType {
+        font-size: 17px;
+        font-family: 'Dosis', sans-serif;
+        margin: 10px 10px 5px 10px; }
+      .page .main .gasCalculator .liters {
+        background-color: #f8e07f; }
+  .page .footer {
+    background-color: #081a0b;
+    width: 70%;
+    height: 150px;
+    margin-top: auto; }
+
+.logIn_and_Registration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #8096fc;
+  width: 300px;
+  height: 300px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  border-radius: 30px;
+  font-family: 'Roboto Mono', monospace;
+  z-index: 2; }
+  .logIn_and_Registration .header_logo {
+    font-family: 'Dosis', sans-serif;
+    text-decoration: none;
+    font-size: 30px; }
+  .logIn_and_Registration .loginText {
+    margin: 20px 10px 5px 1px;
+    font-size: 20px; }
+  .logIn_and_Registration .log_in_out {
+    border-radius: 10px;
+    font-size: 20px; }
+  .logIn_and_Registration .passwordText {
+    margin: 30px 10px 5px 1px;
+    font-size: 20px; }
+  .logIn_and_Registration .password {
+    border-radius: 10px;
+    font-size: 20px; }
+  .logIn_and_Registration .confirmEntry {
+    margin: 30px 10px 5px 1px;
+    font-size: 30px;
+    font-family: 'Dosis', sans-serif;
+    border-radius: 10px;
+    border-style: groove;
+    border-color: #002cff;
+    background-color: #d654ff; }
+  .logIn_and_Registration .fa-xmark {
+    position: absolute;
+    margin: 10px 10px 30px 260px;
+    font-size: 30px; }
+
+/*# sourceMappingURL=style.css.map */

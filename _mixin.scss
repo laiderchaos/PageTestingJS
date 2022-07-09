@@ -1,0 +1,6 @@
+@mixin do-not-allocate{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
