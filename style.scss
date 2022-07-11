@@ -137,6 +137,37 @@ body {
     margin-top: auto;
   }
 }
+.registration{
+  @include base-window-hiddden;
+  border-radius: 30px;
+  width: 300px;
+  height: 480px;
+  font-family: 'Roboto Mono', monospace;
+  p{
+    padding: 0;
+    margin: 20px 0px 7px 0px;
+  }
+  .nickname_reg, .mail_reg, .password_reg, .repeat_password_reg{
+    margin: 0px 0px 25px 0px;
+    border-radius: 10px;
+  }
+  .confirm_accept_term_of_usage{
+    position: absolute;
+    margin: 386px 240px 0px 0px;
+  }
+  .confirm_accept_term_of_usage_text{
+    margin: 5px 0px 25px 0px;
+  }
+  .confirmEntryRegistration{
+    margin: 0px 10px 5px 1px;
+    font-size: 25px;
+    font-family: 'Dosis', sans-serif;
+    border-radius: 10px;
+    border-style: groove;
+    border-color: #002cff;
+    background-color: #d654ff;
+  }
+}
 .logIn_and_Registration{
   @include base-window-hiddden;
   width: 300px;
@@ -178,10 +209,5 @@ body {
     position: absolute;
     margin: 10px 10px 30px 260px;
     font-size: 30px;
-  }
-  .registration{
-    @include base-window-hiddden;
-    width: 500px;
-    height: 600px;
   }
 }

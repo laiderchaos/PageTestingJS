@@ -2,6 +2,7 @@ const opened_login_window = document.querySelector('.login');
 const close_login_window = document.querySelector('.close_window');
 const login_and_registration = document.querySelector('.logIn_and_Registration');
 const modal_wrapper = document.querySelector('.modal-wrapper');
+const registration = document.querySelectorAll('.registration')
 let reg_window_counter = 0;
 if (reg_window_counter === 0) {
     login_and_registration.style.visibility = 'hidden';
