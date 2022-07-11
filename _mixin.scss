@@ -4,3 +4,15 @@
   -ms-user-select: none;
   user-select: none;
 }
+@mixin base-window-hiddden{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #8096fc;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+}

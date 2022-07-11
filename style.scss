@@ -138,18 +138,9 @@ body {
   }
 }
 .logIn_and_Registration{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #8096fc;
+  @include base-window-hiddden;
   width: 300px;
   height: 300px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  position: absolute;
   border-radius: 30px;
   font-family: 'Roboto Mono', monospace;
   z-index: 2;
@@ -187,5 +178,10 @@ body {
     position: absolute;
     margin: 10px 10px 30px 260px;
     font-size: 30px;
+  }
+  .registration{
+    @include base-window-hiddden;
+    width: 500px;
+    height: 600px;
   }
 }
