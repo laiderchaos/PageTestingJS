@@ -26,11 +26,12 @@ const comUrl = urlGenerator('com');
 //document.querySelectorAll('link')[0].getAttribute('href');
 // Gas calculator test.
 let gas = document.querySelectorAll('.gas');
+let gasAmount = document.querySelector('.amount_of_gas')
 for (let i = 0; i < gas.length; i++ ){
     gas[i].onclick = function () {
         let gallons = document.querySelector('.liters').value;
         let amount = this.getAttribute('data-scale');
-        console.log(gallons*amount);
+        gasAmount.value = gallons * amount;
     }
 }
 let createElement = document.createElement('div');
@@ -93,4 +94,4 @@ function populateStorage() {
     localStorage.setItem('image', 'miGato.png');
 
     localStorage.clear();
-}
+};

@@ -114,8 +114,8 @@ body {
 
     .gasCalculator{
       width: 190px;
-      height: 150px;
-      background-color: #efcb70;
+      height: 190px;
+      background-color: #efa970;
       border-radius: 10px;
       display: flex;
       align-items: center;
@@ -127,6 +127,10 @@ body {
       }
       .liters{
         background-color: #f8e07f;
+      }
+      .resultGas{
+        margin: 5px 0px 5px 0px;
+        font-family: 'Dosis', sans-serif;
       }
     }
   }
