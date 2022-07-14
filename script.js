@@ -71,3 +71,26 @@ object.username = 'g';// Name is too short
 object.username = "garry";
 object.showHistory()
 
+// Local storage - page linking, shopping basket
+
+const arr1 = [32,42,55];
+localStorage.setItem('arr1', JSON.stringify(arr1)); // Set a local array
+let arr1Get = localStorage.getItem('arr1') // Getting a local array
+console.log(arr1Get)
+
+const arr2 = {
+    hello: 5,
+    world: 1
+};
+localStorage.setItem('arr2', JSON.stringify(arr2)); // Set a local object
+let arr2Get = localStorage.getItem('arr2') // Getting a local object
+console.log(arr2Get)
+
+// Clear local storage
+function populateStorage() {
+    localStorage.setItem('bgcolor', 'red');
+    localStorage.setItem('font', 'Helvetica');
+    localStorage.setItem('image', 'miGato.png');
+
+    localStorage.clear();
+}

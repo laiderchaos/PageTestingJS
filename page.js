@@ -2,7 +2,7 @@ const opened_login_window = document.querySelector('.login');
 const close_login_window = document.querySelector('.close_window');
 const login_and_registration = document.querySelector('.logIn_and_Registration');
 const modal_wrapper = document.querySelector('.modal-wrapper');
-const registration = document.querySelectorAll('.registration')
+const registration = document.querySelectorAll('div.registration')
 let reg_window_counter = 0;
 if (reg_window_counter === 0) {
     login_and_registration.style.visibility = 'hidden';
@@ -25,6 +25,12 @@ function open_window(clickable_object, opened_object) {
     }
 }
 
+let perebor = function (array) {
+    for (let i = 0;i < registration.length; i++){
+        console.log(array[i])
+    }
+}
+perebor(registration);
 open_window(opened_login_window, login_and_registration);
 close_window(close_login_window, login_and_registration);
 close_window(modal_wrapper, login_and_registration);
